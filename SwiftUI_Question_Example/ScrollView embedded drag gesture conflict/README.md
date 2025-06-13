@@ -18,7 +18,7 @@
 
 - 使用XCode16之前的完美解决方案
 
-内部视图使用 `.simultaneousGesture()` 方法包含一个点击手势`TapGesture`，通过`exclusively(before: DragGesture)`的方式只响应拖动手势，这个在XCode16之前能解决__问题3__。
+内部视图使用 `.simultaneousGesture()` 方法包含一个点击手势`TapGesture`，通过`exclusively(before: DragGesture)`的方式只响应拖动手势，这个在XCode16之前能解决[问题3]。
 
 通过在scrollview与内部拖动手势之间添加一个点击手势，这样可以破坏scrollview与dragGesture之间的响应链，不会导致同时响应
 
